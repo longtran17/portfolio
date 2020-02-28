@@ -1,0 +1,21 @@
+
+//medium devices
+@media only screen (min-width: 768px){
+  .container, .menu {
+    max-width: 720px;
+  }
+}
+
+//large devices
+@media only screen (min-width: 992px){
+  .container, menu {
+    max-width: 960px;
+  }
+}
+
+//xlarge devices
+@media only screen (min-width: 1200px){
+  .container, .menu {
+    max-width: 1080px;
+  }
+}
