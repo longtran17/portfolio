@@ -12,24 +12,24 @@
 <body>
 <!-- Navigation bar -->
 <div class="container">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"style="margin-top:10px;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"style="margin-bottom:10px;">
   <a class="navbar-brand" href="#">My Portfolio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
    <div class="navbar-nav" style="text-indent: 10px;">
-     <a class="nav-item nav-link" href="#">Summary<span class="sr-only">(current)</span></a>
+     <a class="nav-item nav-link" href="#summary">Summary<span class="sr-only">(current)</span></a>
      <div class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="dropdown-lang" href="#" role="button" aria-haspopup="true" data-toggle="dropdown" style="text-decoration: none">Experiences</a>
           <div class="dropdown-menu" style="background-color:#f0f0f5;" aria-labelledby="dropdown-lang">
-            <a class="dropdown-item" href="">Data Analyst</a>
-            <a class="dropdown-item" href="">Engineer</a>
-            <a class="dropdown-item" href="">Web Developer</a>
+            <a class="dropdown-item" href="#datanalyst">Data Analyst</a>
+            <a class="dropdown-item" href="#engr">Engineer</a>
+            <a class="dropdown-item" href="#webdev">Web Developer</a>
           </div>
         </div>
-     <a class="nav-item nav-link" href="#">Skills</a>
-     <a class="nav-item nav-link" href="#">Education</a>
+     <a class="nav-item nav-link" href="#skills">Skills</a>
+     <a class="nav-item nav-link" href="#edu">Education</a>
      <a class="nav-item nav-link" href="#">More about me</a>
    </div>
  </div>
@@ -39,38 +39,127 @@
   <!-- Hero section -->
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-8">
-      <div class="data-analyst">
-
+    <div class="col-12" id="summary">
+      <h4>Hello, I'm Long. Very nice to meet you.</h4>
+      <p>I am an IT professional with experience in providing innovative solutions for automated data reconciliations
+and data validations. Seeking a transition into software engineering to utilize technical skills and
+relevant expertise to help the company achieve business goals.</p>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="data-analyst" id="datanalyst">
+        <h5>Data Analytics & Reporting</h5>
+        <ul class="work-exp">
+          <li>Design and develop automation solutions for data processing between different data sources using SAS DataFlux Studio</li>
+          <ul>
+            <li>Develop SQL queries to retrieve raw data from sources across multiple platforms</li>
+            <li>Leverage Python to perform data cleaning to filter, identify missing, de-dupe, and correct data</li>
+            <li>Develop logics to examine and analyst datasets using Expression Language and built-in functions</li>
+          </ul>
+        </ul>
         </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="engineer">
-
+    <div class="col-12 col-md-6">
+      <div class="engineer" id="engr">
+        <h5>Engineer</h5>
+        <ul class="work-exp">
+          <li>SharePoint Administrator</li>
+          <ul>
+            <li>Deployed Enterprise SharePoint Server</li>
+            <li>Managed SharePoint farms, service applications, web applications, and security for 300 Enterprise SharePoint sites</li>
+            <li>Acted as initiative lead for migration project from SharePoint 2010 to SharePoint 2013</li>
+          </ul>
+        </ul>
         </div>
     </div>
 </div>
-<div class="container">
+
 <div class="row">
   <div class="col-12">
-    <div class="developer">
-
+    <div class="developer" id="webdev">
+      <h5 class="text-center">Web Developer</h5>
+      <p>I'm currently enrolled in Full-Stack Web Development program, offered by Altcademy. The curriculum covers HTML/CSS, JavaScript, React, Ruby, and Rails.<br>
+      Please check out my recent work.</p>
       </div>
   </div>
+</div>
+<!-- Projects -->
 <div class="row">
   <div class="col-12 col-md-4">
-    <div class="proj-apple">
+      <div class="card h-100" style="width: 22rem;" >
+        <img src="images/apple-clone.png" class="card-img-top">
+        <div class="overlay-btn">
+          <a href="https://stupefied-jang-a9de34.netlify.com/" target="_blank" class="btn btn-primary"> Check it out!</a>
+        </div>
       </div>
+
   </div>
   <div class="col-12 col-md-4">
-    <div class="proj-news">
+    <div class="card h-100" style="width: 22rem;">
+        <img class="card-img-top website-img" src="images/newsweek-clone.png">
+      <div class="overlay-btn">
+        <a href="https://fervent-goldberg-9c3ae5.netlify.com/" target="_blank" class="btn btn-primary" >Check it out!</a>
+      </div>
       </div>
     </div>
+
   <div class="col-12 col-md-4">
-    <div class="proj-airbnb">
+      <div class="card h-100" style="width: 22rem;">
+          <img class="card-img-top website-img" src="images/airbnb-clone.png">
+        <div class="overlay-btn">
+          <a href="https://happy-spence-785979.netlify.com/" target="_blank" class="btn btn-primary"> Check it out!</a>
+        </div>
       </div>
     </div>
   </div>
+
+  <!--professional skills-->
+
+  <h5 class="text-center" style="margin-top: 10px;" id="skills">Professional Skills</h5>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <ul>
+        <li>Full-stack: HTML/CSS, JavaScript, React, Ruby, and Rails</li>
+        <li>Python for data analysis</li>
+        <li>DataFlux Studio</li>
+        <li>SAS</li>
+        <li>SQL</li>
+        <li>ETL Process</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 d-flex">
+      <ul>
+        <li>Application Development</li>
+        <li>Enterprise Implementation</li>
+        <li>System Administration</li>
+        <li>System Integration Testing</li>
+        <li>Technical Analysis</li>
+        <li>Troubleshooting</li>
+      </ul>
+    </div>
+  </div>
+  <!--Education-->
+  <h5 class="text-center" id="edu" style="margin: 10px 0 10px 0;">Education</h5>
+  <div class="row">
+    <div class="col">
+      <h6>Altcademy</h6>
+      <p>Full-stack Web Development</p>
+    </div>
+    <div class="col">
+      <h6>Georgetown University</h6>
+      <p>Master's Degree in Technology Management</p>
+    </div>
+    <div class="col">
+      <h6>George Mason University</h6>
+      <p>B.S. Applied Information Technology</p>
+    </div>
+  </div>
+<!-- More about me -->
+
+</div>
+
+
 <footer>
 
 </footer>
