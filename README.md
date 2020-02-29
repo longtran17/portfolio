@@ -2,6 +2,3 @@
 #Thursday feb-27 7:30PM
 Design personal Portfolio
 Site structure and Navbar structure completed
-
-#Sat feb-29
-continue working 
